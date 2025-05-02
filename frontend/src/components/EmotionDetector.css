@@ -1,0 +1,190 @@
+/* Full page setup */
+.emotion-page {
+    background-image: url('https://image.shutterstock.com/image-vector/abstract-white-background-gradient-color-260nw-2514451495.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-area {
+    flex: 1;
+    padding: 100px 50px 20px 50px; /* top padding increased */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback-section {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .feedback-section button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .feedback-section button:hover {
+    background-color: #dcdcdc;
+    transform: scale(1.05);
+  }
+  
+  .feedback-thanks {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #3c763d;
+    font-weight: bold;
+  }
+  
+  
+  
+  /* Welcome message */
+  .welcome-message {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Each chat message pair (user + bot separately) */
+  .message-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Gap between user and bot messages */
+    margin-bottom: 25px;
+  }
+  
+  /* User message bubble */
+  .user-message {
+    background-color: #0b457c;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px 25px 5px 25px;
+    align-self: flex-end; /* Push right */
+    max-width: 60%;
+    font-size: 18px;
+    word-break: break-word;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Bot (emotion) response bubble */
+  .bot-response {
+    background-color: #f1f0f0;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 25px 25px 25px 5px;
+    align-self: flex-start; /* Push left */
+    max-width: 60%;
+    font-size: 18px;
+    word-break: break-word;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Bottom input area */
+  .input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(16, 28, 72, 0.9);
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Text input */
+  .input-area input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #46508e;
+    outline: none;
+    margin: 10px 15px;
+    font-size: 16px;
+  }
+  
+  /* Mic and Send buttons */
+  .mic-button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white; /* ✅ Make the arrow white */
+
+  }
+  .send-button {
+    background: none;
+    border: none;
+    font-size: 50px;
+    color:rgba(247, 247, 248, 0.658); /* ✅ Make the arrow white */
+    cursor: pointer;
+  }
+  .input-area input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgba(247, 247, 248, 0.658); /* very faded */
+    border: 1px solid #ccc;
+    outline: none;
+    margin: 10px 15px;
+    font-size: 16px;
+    color:black;/* Text color inside */
+  }
+  /* Navbar container */
+/* Navbar container */
+/* Navbar container */
+.navbar {
+    background-color: rgba(16, 28, 72, 0.9);
+    height: 70px;
+    width: 90%;
+    margin: 10px auto 0 auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Common item style */
+  .navbar-item {
+    color: #bbb;
+    font-size: 22px;
+    padding: 10px 20px; /* ✅ same padding for all */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* remove underline */
+    transition: 0.3s;
+  }
+  
+  /* Active item */
+  .navbar-item.active {
+    background-color: #253858;
+    color: white;
+  }
+  
+  /* Hover effect */
+  .navbar-item:hover {
+    color: white;
+  }
+  

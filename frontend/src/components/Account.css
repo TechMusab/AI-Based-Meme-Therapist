@@ -1,0 +1,116 @@
+.account-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  
+  .account-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s ease;
+  }
+  
+  .account-card h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .change-password h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+  
+  .change-password label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .change-password input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .change-password input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  
+  .change-password button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--accent);
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  .change-password{
+    margin-bottom: 5px;
+  }
+  .change-password button:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  .logout button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--error);
+    color: recurrence;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout button:hover {
+    background-color: #e63946;
+  }
+  
+  .success {
+    color: #28a745;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .error {
+    color: var(--error);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .account-page {
+      padding: 1rem;
+    }
+  
+    .account-card {
+      padding: 1.5rem;
+    }
+  }
